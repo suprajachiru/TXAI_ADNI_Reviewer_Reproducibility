@@ -1,0 +1,30 @@
+{
+  "dataset": "ADNI",
+  "status": "awaiting_authorized_adni_execution",
+  "required_folds": 5,
+  "results_fabricated": false,
+  "participant_data_included": false,
+  "official_source": "https://adni.loni.usc.edu",
+  "expected_artifacts": [
+    "experiment_config.json",
+    "fold_metrics.csv",
+    "pooled_metrics.json",
+    "oof_predictions.csv",
+    "pooled_roc.png",
+    "txai_fold1.pt",
+    "txai_fold2.pt",
+    "txai_fold3.pt",
+    "txai_fold4.pt",
+    "txai_fold5.pt",
+    "trustworthy_fold1.json",
+    "trustworthy_fold2.json",
+    "trustworthy_fold3.json",
+    "trustworthy_fold4.json",
+    "trustworthy_fold5.json",
+    "xai_fold1.json",
+    "xai_fold2.json",
+    "xai_fold3.json",
+    "xai_fold4.json",
+    "xai_fold5.json"
+  ]
+}

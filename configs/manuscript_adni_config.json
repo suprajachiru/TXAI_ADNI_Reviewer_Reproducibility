@@ -1,0 +1,29 @@
+{
+  "dataset": "ADNI",
+  "task_setup": "cn_vs_ad",
+  "patient_level_cross_validation": {
+    "folds": 5,
+    "seed": 42
+  },
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "batch_size": 16,
+  "max_epochs": 100,
+  "early_stopping_patience": 15,
+  "weight_decay": 0.0001,
+  "dropout": 0.5,
+  "fusion_heads": 8,
+  "normalization": "training-split Z-score",
+  "modalities": [
+    "MRI",
+    "PET",
+    "Clinical",
+    "Biomarker",
+    "Demographic"
+  ],
+  "manifest_env": "TXAI_MANIFEST",
+  "image_size_env": "TXAI_IMAGE_SIZE",
+  "important_note": "Set TXAI_IMAGE_SIZE to the exact 3D preprocessing size used in the original ADNI experiment. The manuscript states 224 x 224 for image preprocessing but does not specify the third 3D dimension in the supplied manuscript.",
+  "dataset_source_url": "https://adni.loni.usc.edu",
+  "dataset_access": "Approved ADNI/LONI IDA access required; dataset not redistributed"
+}
