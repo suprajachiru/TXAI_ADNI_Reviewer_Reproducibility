@@ -68,3 +68,46 @@ The run writes:
 The earlier public repository contained an OASIS-1 lightweight reference run. This package changes the default to ADNI and the manuscript-aligned five-fold/100-epoch/batch-16 configuration. The code does not claim to reproduce the manuscript results until the original ADNI data/manifest and the corresponding execution are supplied and verified.
 
 Do not upload ADNI participant data or restricted data to GitHub.
+
+
+## Manuscript-Reported Results
+
+The following values are the results reported in the manuscript for the
+proposed TXAI framework. They are included here for reference to the
+published manuscript claims and are **not represented as results reproduced
+by the current public package unless corresponding ADNI execution artifacts
+are present**.
+
+| Metric | Proposed TXAI Framework |
+|---|---:|
+| Accuracy | **98.21%** |
+| Precision | **98.74%** |
+| Recall | **98.58%** |
+| F1-score | **98.66%** |
+| AUC | **99.63%** |
+
+These values should be interpreted as the manuscript-reported results.
+The repository provides the implementation and manuscript-aligned
+configuration needed to perform the ADNI experiment. Exact reproduction
+requires the authorized ADNI data and the corresponding patient-level
+manifest. ADNI participant-level data are not redistributed in this
+repository.
+
+### Computational-Efficiency Values Reported in the Manuscript
+
+| Model | Training Time | Inference Time / Sample | Memory Usage | Trainable Parameters |
+|---|---:|---:|---:|---:|
+| Multi-Scale Multimodal Deep Learning Framework | 121.3 min | 11.5 ms | 5.48 GB | 42.70 M |
+| Proposed TXAI Framework | 128.6 min | 13.1 ms | 5.92 GB | 46.85 M |
+
+### TXAI Parameter Count Reported in the Manuscript
+
+The manuscript reports **46.85 million trainable parameters** for the
+complete TXAI framework. The repository source also includes a
+component-wise parameter-count function so that the trainable parameter
+count can be inspected from the implementation.
+
+> **Reproducibility clarification:** The numerical values above are
+> manuscript-reported values. They should not be interpreted as newly
+> reproduced ADNI results until the authorized ADNI experiment has been
+> executed and its output artifacts have been generated and checked.
